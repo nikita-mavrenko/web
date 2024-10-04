@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<title>Задание 3 по WEB</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a class="section-link" href="#links">Ссылки</a>
+			<a class="section-link" href="#table">Таблица</a>
+			<a class="section-link" href="#form">Форма</a>
+		</nav>
+		<div class="header-top">
+			<img src="image.png" class="logo" alt="">
+			<h1 class="header-title">Практическое задание по web №3</h1>
+		</div>
+	</header>
+	<section id="links">
+		<h2 class="section-title">Ссылки</h2>
+		<ul>
+			<li class="link"><a href="http://www.kubsu.ru/">Ссылка на сайт kubsu</a></li>
+			<li class="link"><a href="https://www.kubsu.ru/">Ссылка на сайт kubsu в протоколе https</a></li>
+			<li class="link"><a href="">
+					<div>Изображение ссылка</div>
+					<img class="img-link" src="https://www.kubsu.ru/sites/default/files/news/kubgu_28.jpg" alt="">
+				</a>
+			</li>
+			<li class="link"><a href="inner.html">Ссылка на внутреннюю страницу</a></li>
+			<li class="link"><a href="index.html">Ссылка на главную страницу</a></li>
+			<li class="link"><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
+			<li class="link"><a href="http://www.kubsu.ru/?login=nikitamavrenko&password=12345&email=nikitamavrenko@yandex.ru">Ссылка с тремя параметрами url</a></li>
+			<li class="link"><a href="https://moodle.kubsu.ru/course/view.php?id=780">Ссылка с параметром id</a></li>
+			<li class="link"><a href="inner.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+			<li class="link"><a href="./about/page.html">Ссылка в каталоге about</a></li>
+			<li class="link"><a href="../page.html">Ссылка в каталоге выше текущего</a></li>
+			<li class="link"><a href="../../page.html">Ссылка в каталоге двумя уровнями выше</a></li>
+			<li class="link">Контекстная ссылка в тексте абзаца:
+				<p>URL (англ. Uniform Resource Locator) — это строка, определяющая расположение ресурса (например, веб-страницы, изображения или видео) в Интернете.
+
+					В контексте протокола <a href="https://developer.mozilla.org/ru/docs/Glossary/HTTP">HTTP</a>, URL называют «веб-адресом» или «ссылкой». <a href="https://developer.mozilla.org/ru/docs/Glossary/Browser">Браузер</a> отображает URL в адресной строке, например: https://developer.mozilla.org. Некоторые браузеры отображают только часть URL, которая находится после «//», то есть доменное имя.</p>
+			</li>
+			<li class="link"><a href="https://www.w3schools.com/html/html_images_imagemap.asp">Ссылка на фрагмент страницы стороннего сайта</a></li>
+			<li class="link">Ссылки из прямоугольных и круглых областей картинки
+
+				<br>
+				<img class="img-link" src="https://www.kubsu.ru/sites/default/files/news/kubgu_28.jpg" alt="" usemap="#mymap">
+				<map name="mymap">
+					<area shape="rect" coords="0,0,200,100" href="https://kubsu.ru/" alt="Прямоугольная область">
+					<area shape="circle" coords="300,300,300" href="https://kubsu.ru/" alt="Круглая область">
+				</map>
+			</li>
+			<li class="link"><a href="">Ссылка с пустым href</a></li>
+			<li class="link"><a>Ссылка без href</a></li>
+			<li class="link"><a href="https://www.kubsu.ru/" rel="nofollow">Ссылка, по которой запрещено переходить поисковикам</a></li>
+			<li class="link"><a href="https://www.kubsu.ru/" rel="noindex">Ссылка, по которой запрещено индексировать поисковикам</a></li>
+			<li class="link">
+				<p>Нумерованный список ссылок</p>
+				<ol>
+					<li><a href="https://learn.javascript.ru/" title="Learn javascript">Learn javascript</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/" title="MDN">MDN</a></li>
+					<li><a href="https://www.w3schools.com/" title="W3 school">W3 school</a></li>
+					<li><a href="https://react.dev/" title="React">React</a></li>
+				</ol>
+			</li>
+			<li><a href="ftp://nikita:pass123@example.com/Temp/file.txt">Ссылка на FTP</a></li>
+		</ul>
+	</section>
+	<section id="table">
+		<h2 class="section-title">Таблица</h2>
+		<table>
+			<tr class="nctr">
+				<th></th>
+				<th>Столбец 1</th>
+				<th>Столбец 2</th>
+				<th>Столбец 3</th>
+				<th>Столбец 4</th>
+				<th colspan="2">Столбец 5</th>
+			</tr>
+			<tr>
+				<th>Пункт 1</th>
+				<th>Поле </th>
+				<th>Поле 2</th>
+				<th>Поле 3</th>
+				<th>Поле 4</th>
+				<th>Поле 5</th>
+				<th>Поле 6</th>
+			</tr>
+			<tr class="nctr">
+				<th>Пункт 2</th>
+				<th>Поле 7</th>
+				<th>Поле 8</th>
+				<th>Поле 9</th>
+				<th>Поле 10</th>
+				<th colspan="2">Поле 11</th>
+			</tr>
+			<tr>
+				<th>Пункт 3</th>
+				<th>Поле 12</th>
+				<th>Поле 13</th>
+				<th>Поле 14</th>
+				<th>Поле 15</th>
+				<th>Поле 16</th>
+				<th>Поле 17</th>
+			</tr>
+			<tr class="nctr">
+				<th>Пункт 1</th>
+				<th>Поле 18</th>
+				<th>Поле 19</th>
+				<th>Поле 20</th>
+				<th>Поле 21</th>
+				<th>Поле 22</th>
+				<th>Поле 23</th>
+			</tr>
+			<tr>
+				<th>Пункт 1</th>
+				<th>Поле 24</th>
+				<th>Поле 25</th>
+				<th>Поле 26</th>
+				<th>Поле 27</th>
+				<th>Поле 28</th>
+				<th>Поле 29</th>
+			</tr>
+			<tr class="nctr">
+				<th>Пункт 6</th>
+				<th>Поле 30</th>
+				<th>Поле 31</th>
+				<th>Поле 32</th>
+				<th>Поле 33</th>
+				<th colspan="2">Поле 34</th>
+			</tr>
+		</table>
+	</section>
+	<section id="form">
+		<h2 class="section-title">Форма</h2>
+		<form action="/" method="POST" id="forma">
+			<label for="fio">ФИО</label>
+			<input type="text" name="fio" id="fio">
+			<br>
+			<label for="tel">Телефон</label>
+			<input type="tel" name="tel" id="tel">
+			<br>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+			<br>
+			<label for="birth">Дата рождения</label>
+			<input type="date" name="birth" id="birth">
+			<br>
+			Пол
+			<label>
+				<input type="radio" name="sex" value="Мужчина" />
+				Мужчина</label>
+			<label>
+				<input type="radio" name="sex" value="Женщина" />
+				Женщина</label>
+			<br />
+			<label for="lang">Любимый язык программирования</label>
+			<br>
+			<select name="PL list" multiple="multiple" id="lang">
+				<option value="1" selected="selected">Pascal</option>
+				<option value="2">C</option>
+				<option value="3">C++</option>
+				<option value="4">JavaScript</option>
+				<option value="5">PHP</option>
+				<option value="6">Python</option>
+				<option value="7">Java</option>
+				<option value="8">Haskel</option>
+				<option value="9">Clojure</option>
+				<option value="10">Prolog</option>
+				<option value="11">Scala</option>
+			</select>
+			<br>
+			<label for="bio">Биография</label>
+			<br>
+			<textarea name="bio" id="bio" rows="10" cols="50"></textarea>
+			<br>
+			<label for="contract">С контрактом ознакомлен(а)</label>
+			<input type="checkbox" name="contract" id="contract" />
+			<br>
+			<input type="submit" value="Сохранить">
+		</form>
+	</section>
+	<footer>Сделал Мавренко Никита ФКТИПМ 21/1</footer>
+</body>
+
+</html>
