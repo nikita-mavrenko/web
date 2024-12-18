@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="open-modal">Оставить отзыв</button>
+
+<div class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Форма обратной связи</h2>
+        <form id="feedback-form">
+            <label for="fullName">ФИО:</label>
+            <input name="fullName" type="text" id="fullName" required>
+
+            <label for="email">Email:</label>
+            <input name="email" type="email" id="email" required>
+
+            <label for="phone">Телефон:</label>
+            <input name="phone" type="tel" id="phone" required>
+
+            <label for="organization">Организация:</label>
+            <input name="organization" type="text" id="organization">
+
+            <label for="message">Сообщение:</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <label>
+                Согласен с политикой обработки персональных данных <input type="checkbox" id="agreement" required>
+            </label>
+
+            <button type="submit">Отправить</button>
+        </form>
+        <div class="response-message"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
