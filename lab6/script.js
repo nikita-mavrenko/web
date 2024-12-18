@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const typesList = document.getElementById("types")
     const optionsList = document.getElementById("options")
     const additionsList = document.getElementById("additions")
+    const calculateBtn = document.getElementById('calculateBtn')
 
     optionsList.style.display = "none"
     const products = {
@@ -138,12 +139,11 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    change()
 
     productSelect.addEventListener('change', (event) => {
         change()
     })
-
-    const calculateBtn = document.getElementById('calculateBtn')
 
     calculateBtn.addEventListener('click', event => {
         event.preventDefault()
@@ -171,7 +171,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 add += Number(a.value)
             })
         }
-
 
         const quantity = quantityInput.value
 
